@@ -1,0 +1,29 @@
+.result .image {
+    max-width: 33%px;
+    height: 250px;
+    background-image: url("test.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.result .text {
+    background-color: rgb(237, 237, 237);
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+
+.result {
+    width: 33%px;
+    height: 300px;
+}
+.container {margin-top: 5vh;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /*grid-template-rows: auto auto auto; */
+  gap: 50px 10px;
+
+}
