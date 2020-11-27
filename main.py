@@ -1,5 +1,6 @@
 from flask import Flask, request
 from flask_cors import CORS
+from flask import render_template
 from fastai.vision.all import *
 
 #Labeling function required for load_learner to work
@@ -10,6 +11,10 @@ learn = load_learner(Path('./export.pkl')) #Import Model
 app = Flask(__name__)
 cors = CORS(app) #Request will get blocked otherwise on Localhost
 
+@app.route("/")
+def index():
+    return render_template("index.html")
+
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     img = PILImage.create(request.files['file'])
@@ -18,6 +23,9 @@ def predict():
 
 if __name__=='__main__':
     app.run(host= '0.0.0.0', port=5000)
+
+url_for('static', filename='style.css')
+url_for('static', filename='main.js')
 
 
 

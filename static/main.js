@@ -10,7 +10,9 @@ form.addEventListener('submit', function(ev) {
       body: formdata,
     };
     
-    fetch("https://1a3c5e234d38.ngrok.io/predict", requestOptions)
+    var loc = window.location;
+
+    fetch(`${loc.protocol}//${loc.hostname}:${loc.port}/predict`, requestOptions)
        .then(response => response.text().then((result =>{
           console.log(result);
           DisplayResult(result)
