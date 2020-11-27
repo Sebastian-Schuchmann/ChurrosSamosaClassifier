@@ -7,6 +7,9 @@ COPY requirements.txt .
 
 RUN pip install --upgrade -r requirements.txt
 
+COPY main.py .
+COPY export.pkl .
+
 RUN python main.py
 
 EXPOSE 5000
