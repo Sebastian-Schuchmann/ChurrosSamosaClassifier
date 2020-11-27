@@ -8,7 +8,7 @@ form.addEventListener('submit', function(ev) {
       body: formdata,
     };
     
-    fetch("http://127.0.0.1:5000/predict", requestOptions)
+    fetch("http://1a3c5e234d38.ngrok.io/predict", requestOptions)
        .then(response => alert(response))
        .then(result => alert(result))
        .catch(error => alert('error', error));
