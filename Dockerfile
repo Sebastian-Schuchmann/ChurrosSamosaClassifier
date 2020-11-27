@@ -7,6 +7,9 @@ COPY requirements.txt .
 
 RUN pip install --upgrade -r requirements.txt
 
+COPY ./static .
+COPY ./templates .
+
 COPY main.py .
 COPY export.pkl .
 
