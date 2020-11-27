@@ -9,7 +9,7 @@ form.addEventListener('submit', function(ev) {
       body: formdata,
     };
     
-    fetch("http://1a3c5e234d38.ngrok.io/predict", requestOptions)
+    fetch("https://1a3c5e234d38.ngrok.io/predict", requestOptions)
        .then(response => console.log(response))
        .then(result => console.log(result))
        .catch(error => console.log(error));
