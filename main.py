@@ -22,7 +22,7 @@ def predict():
     return f'{label} ({torch.max(probs).item()*100:.0f}%)'
 
 if __name__=='__main__':
-    app.run(host= '0.0.0.0', port=5000)
+    app.run(host="0.0.0.0", port=5001)
 
 url_for('static', filename='style.css')
 url_for('static', filename='main.js')
