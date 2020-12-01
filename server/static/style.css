@@ -18,12 +18,15 @@
     width: 33%px;
     height: 300px;
 }
-.container {margin-top: 5vh;}
+
+.container {
+    margin-top: 5vh;
+}
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  /*grid-template-rows: auto auto auto; */
-  gap: 50px 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*grid-template-rows: auto auto auto; */
+    gap: 50px 10px;
 
 }
