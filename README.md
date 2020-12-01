@@ -7,8 +7,8 @@ For containerization and easy deployment I use Docker.
 You can easily use this as a template for your own models.
 
 ### Train your own Model
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/weiji14/deepbedmap/]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Sebastian-Schuchmann/ChurrorsSamosaClassifier/blob/main/Train_a_Food_Model.ipynb)
+
+
 
 ### Deploy your own Model
-
-
