@@ -16,9 +16,10 @@
 #churros {
     position: fixed;
     bottom: 0;
-    width: 453px;
-    height: 480px;
+    width: 340px;
+    height: 360px;
     left:3%;
+    pointer-events: none;
 }
 
 
