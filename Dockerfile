@@ -7,12 +7,14 @@ COPY requirements.txt .
 
 RUN pip install --upgrade -r requirements.txt
 
-COPY ./static .
-COPY ./templates .
+COPY static static/
+COPY templates templates/
 
 COPY main.py .
 COPY export.pkl .
 
 RUN python main.py
 
-EXPOSE 5001
+EXPOSE 5000
+
+CMD ["python", "main.py", "start"]
