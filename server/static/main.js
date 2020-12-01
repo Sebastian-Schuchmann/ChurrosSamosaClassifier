@@ -1,6 +1,11 @@
 var form = document.forms.namedItem("fileinfo");
 var lastImage;
 
+/*
+For such a simple app I chose not to use a Framework like react, so it's plain vanilla JS.
+But it uses Axios for fetching data via HTTP from the server.
+*/
+
 form.addEventListener('submit', function(ev) {
   ev.preventDefault()
     let formdata = new FormData(form);
