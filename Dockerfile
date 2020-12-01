@@ -1,4 +1,4 @@
-FROM python:3.6-slim-buster
+FROM python:3.6
 
 RUN apt-get update && apt-get install -y git python3-dev gcc \
     && rm -rf /var/lib/apt/lists/*
@@ -13,8 +13,4 @@ COPY templates templates/
 COPY main.py .
 COPY export.pkl .
 
-RUN python main.py
-
-EXPOSE 5000
-
-CMD ["python", "main.py", "start"]
+CMD ["python", "main.py"]
