@@ -13,6 +13,14 @@
     padding: 10px 0px 10px 0px;
 }
 
+#churros {
+    position: fixed;
+    bottom: 0;
+    width: 453px;
+    height: 480px;
+    left:3%;
+}
+
 
 .result {
     width: 33%px;
