@@ -14,7 +14,9 @@
 </head>
 
 <body>
+
     <div class="container">
+
         <div class="row">
             <h1>Classifier</h1>
         </div>
@@ -25,13 +27,16 @@
             <p>Built with PyTorch/FastAI. Just upload an image from your computer and
                 it will be classified.
             </p>
+
         </div>
         <div class="row">
             <h2>Uploader</h2>
         </div>
         <div class="row">
-            <img id="uploadedImg" style="max-width: 250px; max-height: 250px;">
+            <img id="uploadedImg">
         </div>
+        <a class="github-button" href="https://github.com/Sebastian-Schuchmann/ChurrosSamosaClassifier" data-icon="octicon-star" aria-label="Star Sebastian-Schuchmann/ChurrosSamosaClassifier on GitHub">Star</a>
+
         <div class="row">
             <form enctype="multipart/form-data" method="POST" name="fileinfo">
                 <label>Upload your image:</label>
@@ -48,6 +53,7 @@
 
     <script src="./static/main.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
 </html>

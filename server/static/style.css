@@ -30,3 +30,10 @@
     gap: 50px 10px;
 
 }
+
+#uploadedImg {
+    width:intrinsic;
+    height:intrinsic;
+    max-width: 250px;
+    max-height: 250px;
+}
