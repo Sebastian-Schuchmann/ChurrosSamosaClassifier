@@ -31,6 +31,23 @@
 
 }
 
+footer {
+    width: 100%;
+    position: fixed;
+    margin-bottom: 0;
+    bottom: 0;
+    height: 75px;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    margin: 25px
+
+
+}
+
 #uploadedImg {
     width:intrinsic;
     height:intrinsic;
