@@ -30,6 +30,11 @@ At the end of the notebook it will download an export.pkl file, which is your mo
 
 Deploying your on model is a easy as replacing the model (server/export.pkl) with your own model. Of course, it makes sense to also modify the HTML/CSS a bit to your liking.
 
+Command to launch the container:
+```bash
+docker build -t churros_samosa_classifier . && docker run --rm -it -p 5000:5000 churros_samosa_classifier
+```
+
 Then you can deploy the Container to any Cloud Provider of your choosing. 
 
 I recommend [Render](https://render.com), which is what I used for my deployment but everything else should work fine, too. 
