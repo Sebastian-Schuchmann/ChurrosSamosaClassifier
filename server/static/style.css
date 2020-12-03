@@ -63,3 +63,31 @@ footer p {
     max-width: 250px;
     max-height: 250px;
 }
+
+.lds-dual-ring {
+    visibility: hidden;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0px;
+    margin-left: 24px;
+    border-radius: 50%;
+    border: 6px solid #606c76;
+    border-color:  #606c76 transparent  #606c76 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  

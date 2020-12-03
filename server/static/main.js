@@ -8,6 +8,8 @@ But it uses Axios for fetching data via HTTP from the server.
 
 form.addEventListener('submit', function (ev) {
   ev.preventDefault()
+
+  document.getElementById("loader").style.visibility = "visible";
   let formdata = new FormData(form);
 
   var requestOptions = {
@@ -21,6 +23,7 @@ form.addEventListener('submit', function (ev) {
     .then(response => response.text().then((result => {
       console.log(result);
       DisplayResult(result)
+      document.getElementById("loader").style.visibility = "hidden";
     })));
 });
 
